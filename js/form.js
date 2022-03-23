@@ -19,9 +19,8 @@ function submitdata() {
   let a = document.createElement("a");
   // Kasih Comma %2C
   // Kasih new line %0D%0A
-  a.href = `mailto:${email_receiver}?subject=${subject}&body=Hallo Nama Saya ${name}%2C
+  a.href = `mailto:${email_receiver}?subject=${subject}&body=Hello my name ${name}%2C${subject}%2C
     %0D%0A${message}%0D%0A
-    silahkan hubungi saya di nomer telpon saya ${phone} atau dapat mengirimkan email ke 
-    <a href='mailto:${email}'>Email</a>`;
+    you can contact me in my email <a href='mailto:${email}'>Email</a> or you can call me in my number ${phone}`;
   a.click();
 }
